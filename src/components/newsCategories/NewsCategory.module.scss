@@ -1,0 +1,16 @@
+@import "../../styles/_variables.scss";
+
+.category {
+  padding: 0 0.625rem;
+  cursor: pointer;
+
+  &:first-of-type {
+    padding-left: 0;
+  }
+  &:last-of-type {
+    padding-right: 1rem;
+    @media (min-width: 40rem) {
+      padding-right: 0;
+    }
+  }
+}

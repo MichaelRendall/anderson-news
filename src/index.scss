@@ -2,6 +2,7 @@
 
 * {
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -19,4 +20,9 @@ body {
 
 main {
   grid-area: main;
+  width: 100%;
+  @media (min-width: 40rem) {
+    width: 35rem;
+    margin: auto;
+  }
 }
