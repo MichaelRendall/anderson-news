@@ -1,0 +1,32 @@
+@import "../../styles/_variables.scss";
+
+.hamburger {
+  height: 1.25rem;
+  display: flex;
+  align-items: flex-start;
+  flex-flow: column;
+  justify-content: space-evenly;
+  padding: 0;
+  cursor: pointer;
+
+  div {
+    background-color: $black;
+    height: 0.125rem;
+    border-radius: 1px;
+  }
+  div:first-child {
+    width: 0.5rem;
+  }
+  div:nth-child(2) {
+    width: 1rem;
+  }
+  div:last-child {
+    width: 0.75rem;
+  }
+
+  @media (min-width: 60rem) {
+    div {
+      display: none;
+    }
+  }
+}

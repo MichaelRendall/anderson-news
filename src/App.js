@@ -1,9 +1,10 @@
 import { Route, Switch } from "react-router-dom";
+import Header from "./components/header/Header";
 
 function App() {
   return (
     <div className="App">
-      <header>HEADER</header>
+      <Header />
       <main>
         <Switch>
           <Route path="/" exact>

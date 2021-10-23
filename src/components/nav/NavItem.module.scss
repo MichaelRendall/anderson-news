@@ -1,0 +1,31 @@
+@import "../../styles/_variables.scss";
+
+.navItem {
+  margin: 0 0.625rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.navItem__link {
+  color: $black;
+  text-decoration: none;
+  width: 100%;
+  transition: all 0.3s ease;
+
+  &:hover,
+  &:active {
+    color: $red;
+  }
+}
+
+.navItem__link_button {
+  background-color: $red;
+  color: $white;
+  border-radius: 14px;
+  padding: 0.25rem 1rem;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: darken($red, 20%);
+    color: $white;
+  }
+}
