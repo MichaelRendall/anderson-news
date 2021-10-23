@@ -3,6 +3,7 @@
 .category {
   padding: 0 0.625rem;
   cursor: pointer;
+  transition: all 0.3s ease;
 
   &:first-of-type {
     padding-left: 0;
@@ -12,5 +13,11 @@
     @media (min-width: 40rem) {
       padding-right: 0;
     }
+  }
+  &:hover,
+  &:active,
+  &.active {
+    color: $red;
+    text-decoration: underline;
   }
 }

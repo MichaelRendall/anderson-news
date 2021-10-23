@@ -1,0 +1,27 @@
+@import "../../styles/_variables.scss";
+
+.spinner {
+  display: inline-block;
+  width: 5rem;
+  height: 5rem;
+  margin: auto;
+}
+.spinner:after {
+  content: " ";
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  margin: 0.5rem;
+  border-radius: 50%;
+  border: 6px solid $black;
+  border-color: $black transparent $black transparent;
+  animation: spin 1.2s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

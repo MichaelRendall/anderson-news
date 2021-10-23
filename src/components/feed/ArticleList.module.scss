@@ -1,0 +1,12 @@
+@import "../../styles/_variables.scss";
+
+.articleList__category {
+  font: {
+    size: 0.9rem;
+    weight: 700;
+  }
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  color: $black;
+  margin: 1rem 0;
+}

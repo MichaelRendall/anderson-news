@@ -1,0 +1,12 @@
+@import "../../styles/_variables.scss";
+
+.feed {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 3.5rem;
+  padding: 0 1rem;
+  @media (min-width: 40rem) {
+    padding: 0;
+  }
+}

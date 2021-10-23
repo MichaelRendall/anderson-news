@@ -3,8 +3,10 @@
 .categories__section {
   width: 100%;
   position: fixed;
+  z-index: 10;
+  background-color: $white;
   @media (min-width: 40rem) {
-    width: auto;
+    width: 35rem;
   }
 }
 
@@ -12,7 +14,7 @@
   margin: 0;
   padding: 1rem;
   font: {
-    size: 0.875rem;
+    size: 0.8rem;
     weight: 400;
   }
   border-bottom: 1px solid $light-grey;

@@ -6,13 +6,41 @@ const NavCategories = (props) => {
     <section className={classes.categories__section}>
       <nav className={classes.categories__nav}>
         <ul className={classes.categories__nav_list}>
-          <NewsCategory name="Business" param="/business" />
-          <NewsCategory name="Entertainment" url="/entertainment" />
-          <NewsCategory name="General" url="/general" />
-          <NewsCategory name="Health" url="/health" />
-          <NewsCategory name="Science" url="/science" />
-          <NewsCategory name="Sports" url="/sport" />
-          <NewsCategory name="Technology" url="/tech" />
+          <NewsCategory
+            name="Business"
+            activeCategory={props.activeCategory}
+            clicked={() => props.clicked("business")}
+          />
+          <NewsCategory
+            name="Entertainment"
+            activeCategory={props.activeCategory}
+            clicked={() => props.clicked("entertainment")}
+          />
+          <NewsCategory
+            name="General"
+            activeCategory={props.activeCategory}
+            clicked={() => props.clicked("general")}
+          />
+          <NewsCategory
+            name="Health"
+            activeCategory={props.activeCategory}
+            clicked={() => props.clicked("health")}
+          />
+          <NewsCategory
+            name="Science"
+            activeCategory={props.activeCategory}
+            clicked={() => props.clicked("science")}
+          />
+          <NewsCategory
+            name="Sports"
+            activeCategory={props.activeCategory}
+            clicked={() => props.clicked("sports")}
+          />
+          <NewsCategory
+            name="Technology"
+            activeCategory={props.activeCategory}
+            clicked={() => props.clicked("technology")}
+          />
         </ul>
       </nav>
     </section>
