@@ -14,6 +14,7 @@ const Feed = (props) => {
   const fetchNewsArticles = useCallback(async () => {
     setIsLoading(true);
     setError(null);
+    setLimit(11);
     try {
       const categoryFilter = props.category
         ? "category=" + props.category + "&"

@@ -2,10 +2,12 @@
 
 To run this project please download and run
 
-### `npm install`
+`npm install`
 
-followed by 
+followed by
 
-### `npm start`
+`npm start`
 
-and going to localhost:3000
+and going to
+
+[localhost:3000][http://localhost/3000]

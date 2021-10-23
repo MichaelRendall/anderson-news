@@ -19,12 +19,13 @@
 .navItem__link_button {
   background-color: $red;
   color: $white;
+  border:2px solid $red;
   border-radius: 14px;
-  padding: 0.25rem 1rem;
+  padding: 0.1rem 1rem;
   transition: all 0.3s ease;
 
   &:hover {
-    background: darken($red, 20%);
-    color: $white;
+    background: $white;
+    color: $red;
   }
 }
