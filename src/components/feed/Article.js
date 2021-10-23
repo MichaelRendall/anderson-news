@@ -2,9 +2,11 @@
 import classes from "./Article.module.scss";
 
 const Article = (props) => {
-  let category;
   let description;
   let smallContent;
+
+  let category =
+    props.category !== "Breaking News" ? props.category : "All Categories";
 
   const publishedDateTime = new Date(props.publishedAt);
   const currentDateTime = new Date();
