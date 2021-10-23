@@ -5,7 +5,7 @@ const ArticleList = (props) => {
   return (
     <>
       <small className={classes.articleList__category}>{props.category}</small>
-      {props.articles.map((article) => (
+      {props.articles.slice(0, props.limit).map((article) => (
         <Article
           key={article.id}
           id={article.id}

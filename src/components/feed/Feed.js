@@ -3,11 +3,13 @@ import classes from "./Feed.module.scss";
 
 import ArticleList from "./ArticleList";
 import Spinner from "../UI/Spinner";
+import Button from "../UI/Button";
 
 const Feed = (props) => {
   const [articles, setArticles] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
+  const [limit, setLimit] = useState(11);
 
   const fetchNewsArticles = useCallback(async () => {
     setIsLoading(true);
@@ -49,14 +51,18 @@ const Feed = (props) => {
     fetchNewsArticles();
   }, [fetchNewsArticles]);
 
-  console.log(articles);
+  const loadMorePostsHandler = () => {
+    setLimit(limit + 10);
+  };
 
   let content = <p>No news items to display</p>;
 
   if (articles.length > 0) {
-    let category = props.category ? props.category : "Breaking News";
+    const category = props.category ? props.category : "Breaking News";
 
-    content = <ArticleList category={category} articles={articles} />;
+    content = (
+      <ArticleList category={category} articles={articles} limit={limit} />
+    );
   }
 
   if (error) {
@@ -67,7 +73,14 @@ const Feed = (props) => {
     content = <Spinner />;
   }
 
-  return <section className={classes.feed}>{content}</section>;
+  return (
+    <section className={classes.feed}>
+      {content}
+      {articles.length > limit + 1 && (
+        <Button name="Load More" clicked={loadMorePostsHandler} />
+      )}
+    </section>
+  );
 };
 
 export default Feed;

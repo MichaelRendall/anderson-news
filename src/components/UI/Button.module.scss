@@ -1,0 +1,24 @@
+@import "../../styles/_variables.scss";
+
+.button {
+  background: $white;
+  border: 2px solid $red;
+  border-radius: 50px;
+  margin: 1rem auto 0;
+  padding: 0.5rem 1rem;
+  color: $red;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  transition: all 0.3s ease;
+  width: 10rem;
+  cursor: pointer;
+  font: {
+    size: 0.75rem;
+    weight: 700;
+  }
+
+  &:hover {
+    background: $red;
+    color: $white;
+  }
+}
