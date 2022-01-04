@@ -1,6 +1,6 @@
 # Anderson News
 
-Mock front-end project created with React and SCSS
+Mock front-end project created with React and SCSS. Single page only
 
 Please download the code and then run
 
