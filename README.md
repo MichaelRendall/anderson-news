@@ -1,6 +1,8 @@
-# Test Project for Storm Ideas
+# Anderson News
 
-To run this project please download the code and then run
+Mock front-end project created with React and SCSS
+
+Please download the code and then run
 
 `npm install`
 
